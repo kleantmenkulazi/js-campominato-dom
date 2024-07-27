@@ -1,0 +1,58 @@
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#grid-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#grid-container > * {
+    width: 100px;
+    height: 100px;
+    border: 1px solid aqua;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+#grid-container > .clicked {
+    border-color: aquamarine;
+    background-color: lightcoral;
+}
+#grid-container > .cell-100 {
+    width: 100px;
+    height: 100px;
+}
+#grid-container > .cell-81 {
+    width: calc(1000px / 9);
+    height: calc(1000px / 9);
+}
+#grid-container > .cell-49 {
+    width: calc(1000px / 7);
+    height: calc(1000px / 7);
+}
+#grid-container > .bomb {
+    border-color: crimson;
+    background-color: crimson;
+}
+#grid-container > .not-bomb {
+    border-color: lightgreen;
+    background-color: lightgreen;
+}
+
+
